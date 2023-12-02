@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    @layer components {
+        .cards {
+            @apply flex w-[400px] h-52 border-2 border-preto;
+        }
+
+        .cardsProjeto {
+            @apply  w-[400px] h-[330px] border-2 border-preto;
+        }
+
+
+    }
