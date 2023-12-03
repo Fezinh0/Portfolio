@@ -6,7 +6,7 @@ module.exports = {
       fontFamily : {
         "inter": "Inter, sans-serif",
         "liu": "Liu Jian Mao Cao, cursive",
-        "julius" : "Liu Jian Mao Cao, cursive;"
+        "julius" : "Julius Sans One, sem serifa"
       },
       colors : {
         "amarelo" : "#FBF107",
