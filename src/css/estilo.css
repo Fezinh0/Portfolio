@@ -8,7 +8,7 @@
         }
 
         .cardsProjeto {
-            @apply  w-[400px] h-[330px] border-2 border-preto;
+            @apply  w-[400px] h-[350px] border-2 border-preto shadow-amarelo shadow-[10px];
         }
 
 

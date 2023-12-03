@@ -13,7 +13,8 @@ module.exports = {
         "preto" : "#070707"
       },
       backgroundImage : theme => ({
-        "raio" : "url('/src/img/raio.png')"
+        "raio" : "url('/src/img/raio.png')",
+        "delivery" : "url('/src/img/projetos/delivery.png')"
       })
 
     },
