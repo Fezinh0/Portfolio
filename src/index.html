@@ -17,27 +17,27 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Conexão tailwindcss -->
     <link rel="stylesheet" href="./css/output.css">
+    <!-- Js -->
+    <script defer src="js/main.js"></script>
+
 
 </head>
 
-<body>
+<body class="darkmode" id="ddmode">
     <!-- Cabeçalho -->
     <header>
         <div class="flex justify-between">
 
             <!-- Meu logo -->
-            <a href="portifolio.html">
-                <div
-                    class="cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
-                    <span class="font-liu text-lg">Fz</span>
-                </div>
-            </a>
-
+            <div id="inicio"
+                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
+                <span class="font-liu text-2xl">Fz</span>
+            </div>
 
             <!-- Navegação da página -->
-            <i class="mx-6 my-10 fa-solid fa-bars text-3xl" id="menu-mobile" onclick=""></i>
-            <nav class="hidden">
-                <ul class=" font-inter font-bold md:hid">
+            <i class="mx-6 flex items-center fa-solid fa-bars text-3xl md:hidden" id="menu-mobile" onclick=""></i>
+            <nav class="flex justify-center items-center">
+                <ul class="hidden md:flex gap-10 font-inter font-bold cursor-pointer">
                     <a href="#sobreM">
                         <li>Sobre Mim</li>
                     </a>
@@ -50,65 +50,66 @@
                     <a href="#contato">
                         <li>Contato</li>
                     </a>
+                    <li id="mododark" onclick="clique('')">Modo Dark</li>
                 </ul>
             </nav>
-
+            
         </div>
     </header>
 
     <!-- Conteudo -->
-    <main>
-        <div class="mt-10 flex justify-center items-center flex-col gap-14">
+    <main">
+        <div class="mt-10 flex flex-wrap justify-center items-center gap-14">
 
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-wrap justify-center gap-16 md:gap-32">
 
                 <!-- Titulo principal -->
-                <div class="flex flex-col justify-center items-center">
-                    <span class="text-5xl font-julius">FRONT-END</span>
-                    <span class="ml-32 text-5xl font-julius">DEVELOPER</span>
+                <div class="mx-6 flex flex-col justify-center items-center">
+                    <span class="mr-16 text-5xl font-julius md:text-7xl">FRONT-END</span>
+                    <span class="ml-20 text-5xl font-julius md:text-7xl">DEVELOPER</span>
                 </div>
 
                 <!-- Imagem raio -->
                 <div class="flex justify-center items-center animate-pulse">
-                    <img src="img/raio.png" alt="" class="w-44 border-2 rounded-sm border-amarelo">
+                    <img src="img/raio.png" alt="" class="w-44 border-2 rounded-md border-amarelo md:w-64">
                 </div>
             </div>
 
             <!-------- SOBRE MIM --------->
-            <section class="flex flex-col gap-4" id="sobreM">
+            <section class="flex flex-col gap-4 md:mt-10" id="sobreM">
 
                 <!-- Nome e recepção -->
                 <div class="flex justify-center items-center flex-col">
-                    <p class="text-3xl font-julius">ME CHAMO FERNANDO</p>
-                    <p class="text-3xl text-center font-julius">OLIVEIRA E SEJA BEM </p>
-                    <p class="text-3xl text-center font-julius">VINDO(A)!</p>
+                    <p class="text-3xl font-julius md:text-4xl">ME CHAMO FERNANDO</p>
+                    <p class="text-3xl text-center font-julius md:text-4xl">OLIVEIRA E SEJA BEM </p>
+                    <p class="text-3xl text-center font-julius md:text-4xl">VINDO(A)!</p>
                 </div>
 
                 <!-- Texto sobre mim -->
                 <div class="mx-14 flex justify-center items-center">
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, dolore
-                        similique quos, ea assumenda quibusdam sed tempore magni quod dolorum nemo sunt totam incidunt
-                        quisquam eligendi voluptatibus asperiores provident ex?</p>
+                    <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e atualmente sou
+                        desenvolvedor front-end </p>
                 </div>
             </section>
         </div>
 
         <!-------- FORMAÇÃO ACADÊMICA  --------->
-        <section class="mt-16 flex justify-center items-center flex-col gap-6" id="formacao">
-            <span class="text-center text-3xl font-julius">FORMAÇÕES ACADEMICAS</span>
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius" id="formacao">FORMAÇÕES ACADEMICAS</span>
+        <section class="mt-8 flex flex-wrap justify-center items-center gap-6">
+
 
             <!-- Card 1 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 flex justify-normal w-24 h-44">
-                    <img src="img/raio.png" alt="" class="bg-gray-500">
+                <div class="m-4 ">
+                    <img src="img/formacoes/unip.png" alt="" class="w-24 h-18 rounded-md">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div>
+                <div class="flex justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span>Ciência da Computação</span>
+                    <span class="font-inter">Ciência da Computação</span>
                 </div>
             </div>
 
@@ -116,14 +117,14 @@
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 flex justify-normal w-24 h-44">
-                    <img src="img/raio.png" alt="" class="bg-gray-500">
+                <div class="m-4">
+                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div>
+                <div class="justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span>Ciência da Computação</span>
+                    <span class="font-inter">Desenvolvimento Front-end</span>
                 </div>
             </div>
 
@@ -131,14 +132,14 @@
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 flex justify-normal w-24 h-44">
-                    <img src="" alt="" class=" border-2 border-preto">
+                <div class="m-4 ">
+                    <img src="img/formacoes/alura.jpeg" alt="" class="w-24 h-18 rounded-md">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div>
+                <div class="justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span>Ciência da Computação</span>
+                    <span class="font-inter">UI Design de interfaces e interações</span>
                 </div>
             </div>
 
@@ -146,14 +147,14 @@
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 flex justify-normal w-24 h-44">
-                    <img src="img/raio.png" alt="" class="bg-gray-500">
+                <div class="m-4 ">
+                    <img src="img/formacoes/udemy.jpg" alt="" class="w-24 h-18 rounded-md">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div>
+                <div class="justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span>Ciência da Computação</span>
+                    <span>Javascript e Typescript do Basico ao avançado</span>
                 </div>
             </div>
 
@@ -165,101 +166,108 @@
         </div>
 
         <!-------- Projetos --------->
-        <section class="mt-16 flex justify-center items-center flex-col gap-6" id="projetos">
-            <span class="text-center text-3xl font-julius">FORMAÇÕES ACADEMICAS</span>
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius">MEUS PROJETOS</span>
+        <section class="mt-8 flex flex-wrap justify-center items-center gap-6" id="projetos">
 
             <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class=" flex justify-center m-4">
-                    <img src="img/projetos/delivery.png" alt="" class="w-full h-52 rounded-sm">
+                <div class=" flex justify-center">
+                    <img src="img/projetos/delivery.png" alt="" class="w-full h-32 rounded-sm">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-4">
-                    <div class="flex gap-10">
+                <div class="mx-4 w-full flex flex-col gap-6">
+                    <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">Clone Amazon</span>
+                        <span class="font-inter">Delivery Pizzaria</span>
 
                         <!-- Icons dev -->
-                        <span>
-                            <a href="https://skillicons.dev">
-                                <img src="https://skillicons.dev/icons?i=html,css,tailwindcss" class="w-20" />
-                            </a>
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="">
-                        <p class="text-justify mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                            esse illo quam facere laboriosam odio laborum unde sapiente aspernatur, quod ratione,!</p>
+                    <figcaption class="mr-6">
+                        <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
+                            auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
+                            pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
+                            inclusão de produtos, manual de inclusão de pedidos e gerenciamento destes, com listagem,
+                            edição e inclusão.</p>
                     </figcaption>
                 </div>
             </div>
 
             <!-- Card 2 Projeto -->
+            <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class="flex justify-center m-4">
-                    <img src="img/raio.png" alt="" class="bg-gray-500 w-full h-36 rounded-sm">
+                <div class=" flex justify-center">
+                    <img src="img/projetos/jdm.png" alt="" class="w-full h-32 rounded-sm">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-4">
-                    <div class="flex gap-10">
+                <div class="mx-4 w-full flex flex-col gap-6">
+                    <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">Clone Amazon</span>
+                        <span class="font-inter">JDM</span>
 
                         <!-- Icons dev -->
-                        <span>
-                            <a href="https://skillicons.dev">
-                                <img src="https://skillicons.dev/icons?i=html,css,tailwindcss" class="w-20" />
-                            </a>
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="">
-                        <p class="text-justify mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                            esse illo quam facere laboriosam odio laborum unde sapiente aspernatur, quod ratione,!</p>
+                    <figcaption class="mr-6">
+                        <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
+                            auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
+                            pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
+                            inclusão de produtos, manual de inclusão de pedidos e gerenciamento destes, com listagem,
+                            edição e inclusão.</p>
                     </figcaption>
                 </div>
             </div>
+
 
             <!-- Card 3 Projeto -->
+            <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class="flex justify-center m-4">
-                    <img src="img/raio.png" alt="" class="bg-gray-500 w-full h-36 rounded-sm">
+                <div class=" flex justify-center">
+                    <img src="img/projetos/mova_se.png" alt="" class="w-full h-40 rounded-sm ">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-4">
-                    <div class="flex gap-10">
+                <div class="mx-4 w-full flex flex-col gap-6">
+                    <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">Clone Amazon</span>
+                        <span class="font-inter">Site Radical</span>
 
                         <!-- Icons dev -->
-                        <span>
-                            <a href="https://skillicons.dev">
-                                <img src="https://skillicons.dev/icons?i=html,css,tailwindcss" class="w-20" />
-                            </a>
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="">
-                        <p class="text-justify mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-                            esse illo quam facere laboriosam odio laborum unde sapiente aspernatur, quod ratione,!</p>
+                    <figcaption class="mr-6">
+                        <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
+                            auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
+                            pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
+                            inclusão de produtos, manual de inclusão de pedidos e gerenciamento destes, com listagem,
+                            edição e inclusão.</p>
                     </figcaption>
                 </div>
             </div>
+
         </section>
 
         <!-- Raio canto da tela -->
@@ -268,13 +276,13 @@
         </div>
 
         <!-------- CONTATO  --------->
-        <section class="my-16 flex justify-center items-center flex-col gap-6" id="contato">
+        <section class="my-20 flex justify-center items-center flex-col gap-6" id="contato">
 
             <!-- Titulo do formulario -->
-            <span class="text-3xl font-julius">ENTRE EM CONTATO</span>
+            <span class="text-2xl font-julius">ENTRE EM CONTATO</span>
 
             <!-- Mini texto -->
-            <p class="text-justify">Lorem ipsuming elit.Lorem ipsuming elitLorem ipsuming elit</p>
+            <p class="text-justify font-inter">Fique à vontade para entra em contato comigo!</p>
 
             <!-- Formulario -->
             <div>
@@ -291,11 +299,11 @@
 
                     <!-- Mensagem -->
                     <textarea name="Mensagem" id="" cols="5" rows="5" placeholder="Mensagem"
-                        class="border-2 border-preto rounded-sm"></textarea>
+                        class="border-2 border-preto rounded-md resize-none"></textarea>
 
                     <!-- Botão enviar -->
                     <div class="flex justify-center items-center">
-                        <input type="submit" name="Enviar" id="" class=" bg-amarelo font-inter w-36 h-10 rounded-md">
+                        <input type="submit" name="Enviar" id="" class=" bg-amarelo font-inter w-36 h-10 rounded-lg">
                     </div>
 
                 </form>
@@ -307,30 +315,32 @@
         <div class="flex justify-end -mt-20 mr-2">
             <img src="img/raio.png" alt="" class="w-14">
         </div>
+       
     </main>
 
+    
     <!-------- RODAPÉ --------->
     <footer>
-        <div class="flex flex-col bg-amarelo w-full h-full">
+        <div class="flex flex-col bg-amarelo w-full h-full mt-10">
 
             <!-- Meu logo -->
-            <a href="portifolio.html">
+            <a href="#inicio">
                 <div
-                    class="cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
-                    <span class="font-liu text-lg">Fz</span>
+                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
+                    <span class="font-liu text-2xl">Fz</span>
                 </div>
             </a>
 
             <!-- Icones das redes sociais -->
-            <div class="">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-github"></i>
+            <div class="mx-6 flex justify-center gap-6">
+                <a href=""><i class="hover:fill-orange-900 fa-brands fa-whatsapp text-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in text-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-github text-2xl"></i></a>
             </div>
 
             <!-- Assinatura -->
             <div class="flex justify-center items-center">
-                <span>Copyright © 2023 by Fernando Oliveira | All Rights Reserved</span>
+                <span class="text-center"> © Fernando Oliveira | Todos os direitos reservados</span>
             </div>
 
         </div>

@@ -10,7 +10,9 @@ module.exports = {
       },
       colors : {
         "amarelo" : "#FBF107",
-        "preto" : "#070707"
+        "brancoC" : "rgba('255,255,255,0');",
+        "preto" : "#000000",
+        "pretoT" : "#333"
       },
       backgroundImage : theme => ({
         "raio" : "url('/src/img/raio.png')",
