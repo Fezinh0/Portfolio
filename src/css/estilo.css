@@ -4,11 +4,11 @@
 
     @layer components {
         .cards {
-            @apply rounded-md flex w-[350px] h-52 shadow-2xl shadow-slate-300;
+            @apply border-2 border-gray-400 rounded-md flex flex-col w-[350px] h-52 shadow-bx1 shadow-slate-300;
         }
 
         .cardsProjeto {
-            @apply z-10 bg-white text-preto shadow-2xl shadow-slate-300 font-light rounded-md w-[330px] h-[410px] ;
+            @apply z-10 border-2 border-gray-400 bg-white text-preto shadow-bx1 shadow-slate-300 font-light rounded-md w-[330px] h-[410px] ;
         }
 
         .darkmode {

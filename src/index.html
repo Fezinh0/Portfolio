@@ -23,21 +23,23 @@
 
 </head>
 
-<body class="darkmode" id="ddmode">
+<body class=" " id="ddmode">
     <!-- Cabeçalho -->
     <header>
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
 
             <!-- Meu logo -->
             <div id="inicio"
-                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
+                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-x-orange-700 border-yellow-500 rounded-full">
                 <span class="font-liu text-2xl">Fz</span>
             </div>
 
-            <!-- Navegação da página -->
-            <i class="mx-6 flex items-center fa-solid fa-bars text-3xl md:hidden" id="menu-mobile" onclick=""></i>
-            <nav class="flex justify-center items-center">
-                <ul class="hidden md:flex gap-10 font-inter font-bold cursor-pointer">
+            <nav id="nav" class="relative">
+                <button id="btn-mobile" class="lg:hidden">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu"
+                    class="cursor-pointer lg:items-center lg:w-auto lg:space-x-20 lg:flex lg:mt-0 lg:visible lg:overflow-y-auto">
                     <a href="#sobreM">
                         <li>Sobre Mim</li>
                     </a>
@@ -50,11 +52,12 @@
                     <a href="#contato">
                         <li>Contato</li>
                     </a>
-                    <li id="mododark" onclick="clique('')">Modo Dark</li>
+                    <li id="mododark" onclick="clique('')">Alterar modo</li>
                 </ul>
             </nav>
+        
             
-        </div>
+            
     </header>
 
     <!-- Conteudo -->
@@ -70,8 +73,8 @@
                 </div>
 
                 <!-- Imagem raio -->
-                <div class="flex justify-center items-center animate-pulse">
-                    <img src="img/raio.png" alt="" class="w-44 border-2 rounded-md border-amarelo md:w-64">
+                <div class="flex justify-center items-center animate-pulse ">
+                    <img src="img/raio.png" alt="" id="giro" class=" duration-300 w-44 border-2 rounded-md border-amarelo md:w-64" onclick="Click('')">
                 </div>
             </div>
 
@@ -94,22 +97,29 @@
         </div>
 
         <!-------- FORMAÇÃO ACADÊMICA  --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius" id="formacao">FORMAÇÕES ACADEMICAS</span>
-        <section class="mt-8 flex flex-wrap justify-center items-center gap-6">
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="formacao">FORMAÇÕES ACADÊMICAS</span>
+        
+        <section class="mt-8 flex flex-wrap justify-center items-center gap-8">
 
-
-            <!-- Card 1 Formação -->
+            <!-- Card 2 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 ">
-                    <img src="img/formacoes/unip.png" alt="" class="w-24 h-18 rounded-md">
+                <section class="flex-row flex">
+                <div class="m-4">
+                    <img src="img/formacoes/unip.png" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
                 </div>
 
                 <!-- Informações sobre a formação -->
                 <div class="flex justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span class="font-inter">Ciência da Computação</span>
+                    <span class="font-inter font-bold">Ciência da Computação</span>
+                </div>
+            </section>
+
+                <div class="m-4">
+                    <p class="font-inter text-sm font-light">Instituição : Universidade Paulista</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
                 </div>
             </div>
 
@@ -117,76 +127,97 @@
             <div class="cards">
 
                 <!-- Imagem do card -->
+                <section class="flex-row flex">
                 <div class="m-4">
-                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md">
+                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div class="justify-center items-start mt-7">
+                <div class="flex justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span class="font-inter">Desenvolvimento Front-end</span>
+                    <span class="font-inter font-bold">Desenvolvimento Front-end</span>
+                </div>
+            </section>
+
+                <div class="m-4">
+                    <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
                 </div>
             </div>
 
-            <!-- Card 3 Formação -->
+            <!-- Card 2 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 ">
-                    <img src="img/formacoes/alura.jpeg" alt="" class="w-24 h-18 rounded-md">
+                <section class="flex-row flex">
+                <div class="m-4">
+                    <img src="img/formacoes/udemy.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div class="justify-center items-start mt-7">
+                <div class="flex justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span class="font-inter">UI Design de interfaces e interações</span>
+                    <span class="font-inter font-bold">Javascript e Typescript do básico ao avançado</span>
+                </div>
+            </section>
+
+                <div class="m-4">
+                    <p class="font-inter text-sm font-light">Plataforma de estudos online : Udemy</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
                 </div>
             </div>
-
-            <!-- Card 4 Formação -->
+            
+            <!-- Card 2 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
-                <div class="m-4 ">
-                    <img src="img/formacoes/udemy.jpg" alt="" class="w-24 h-18 rounded-md">
+                <section class="flex-row flex">
+                <div class="m-4">
+                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
                 </div>
 
                 <!-- Informações sobre a formação -->
-                <div class="justify-center items-start mt-7">
+                <div class="flex justify-center items-start mt-7">
                     <!-- Titulo da Formação -->
-                    <span>Javascript e Typescript do Basico ao avançado</span>
+                    <span class="font-inter font-bold">UI Designer de iterfaces e interações</span>
+                </div>
+            </section>
+
+                <div class="m-4">
+                    <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
                 </div>
             </div>
 
         </section>
 
         <!-- Raio canto da tela -->
-        <div class="flex justify-end -mt-4">
+        <div class="flex justify-end items-end w-14">
             <img src="img/raio.png" alt="" class="w-14">
         </div>
 
         <!-------- Projetos --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius">MEUS PROJETOS</span>
-        <section class="mt-8 flex flex-wrap justify-center items-center gap-6" id="projetos">
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl">MEUS PROJETOS</span>
+        <section class="mt-8 flex flex-wrap justify-center items-center gap-8" id="projetos">
 
             <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
                 <div class=" flex justify-center">
-                    <img src="img/projetos/delivery.png" alt="" class="w-full h-32 rounded-sm">
+                    <img src="img/projetos/delivery.png" alt="" class="w-full h-40 rounded-sm">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6">
+                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">Delivery Pizzaria</span>
+                        <span class="font-inter font-bold">Delivery Pizzaria</span>
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java,jquery" class="w-32" />
                         </span>
                     </div>
 
@@ -207,19 +238,19 @@
 
                 <!-- Imagem do card -->
                 <div class=" flex justify-center">
-                    <img src="img/projetos/jdm.png" alt="" class="w-full h-32 rounded-sm">
+                    <img src="img/projetos/jdm.png" alt="" class="w-full h-40 rounded-sm">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6">
+                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">JDM</span>
+                        <span class="font-inter font-bold">JDM</span>
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,tailwind,js," class="w-28" />
                         </span>
                     </div>
 
@@ -236,7 +267,6 @@
 
 
             <!-- Card 3 Projeto -->
-            <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
@@ -245,25 +275,49 @@
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6">
+                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
-                        <span class="font-inter">Site Radical</span>
+                        <span class="font-inter font-bold">Site Radical</span>
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,java" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6">
-                        <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
-                            auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
-                            pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
-                            inclusão de produtos, manual de inclusão de pedidos e gerenciamento destes, com listagem,
-                            edição e inclusão.</p>
+                        <p class="font-inter text-justify text-sm"></p>
+                    </figcaption>
+                </div>
+            </div>
+
+             <!-- Card 3 Projeto -->
+            <div class="cardsProjeto">
+
+                <!-- Imagem do card -->
+                <div class=" flex justify-center">
+                    <img src="img/projetos/instatnteunico.png" alt="" class="w-full h-40 rounded-sm ">
+                </div>
+
+                <!-- Infos -->
+                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
+                    <div class="flex gap-4">
+
+                        <!-- Titulo do projeto -->
+                        <span class="font-inter font-bold">Instante Único</span>
+
+                        <!-- Icons dev -->
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" class="w-28" />
+                        </span>
+                    </div>
+
+                    <!-- Explicação do projeto -->
+                    <figcaption class="mr-6">
+                        <p class="font-inter text-justify text-sm">.</p>
                     </figcaption>
                 </div>
             </div>
@@ -271,7 +325,7 @@
         </section>
 
         <!-- Raio canto da tela -->
-        <div class="flex justify-end -mt-4">
+        <div class="flex justify-end w-14 -mt-4">
             <img src="img/raio.png" alt="" class="w-14">
         </div>
 
@@ -279,14 +333,14 @@
         <section class="my-20 flex justify-center items-center flex-col gap-6" id="contato">
 
             <!-- Titulo do formulario -->
-            <span class="text-2xl font-julius">ENTRE EM CONTATO</span>
+            <span class="text-2xl font-julius md:text-4xl">ENTRE EM CONTATO</span>
 
             <!-- Mini texto -->
             <p class="text-justify font-inter">Fique à vontade para entra em contato comigo!</p>
 
             <!-- Formulario -->
             <div>
-                <form action="" class="flex flex-col gap-6">
+                <form action="" class="flex flex-col gap-6 text-black">
 
                     <!-- Nome -->
                     <input type="text" placeholder="Nome" class="border-b-2 border-preto focus:outline-none w-80">
@@ -295,7 +349,7 @@
                     <input type="text" placeholder="E-mail" class="border-b-2 border-preto focus:outline-none">
 
                     <!-- Assunto -->
-                    <input type="text" placeholder="Assunto" class="border-b-2 border-preto focus:outline-none">
+                    <input type="text" placeholder="Assunto" class="focus:bg-none border-b-2 border-preto focus:outline-none">
 
                     <!-- Mensagem -->
                     <textarea name="Mensagem" id="" cols="5" rows="5" placeholder="Mensagem"
@@ -303,7 +357,7 @@
 
                     <!-- Botão enviar -->
                     <div class="flex justify-center items-center">
-                        <input type="submit" name="Enviar" id="" class=" bg-amarelo font-inter w-36 h-10 rounded-lg">
+                        <input type="submit" name="Enviar" id="" class=" bg-amarelo text-black font-bold font-inter w-36 h-10 rounded-lg">
                     </div>
 
                 </form>
@@ -312,7 +366,7 @@
         </section>
 
         <!-- Raio canto da tela -->
-        <div class="flex justify-end -mt-20 mr-2">
+        <div class="flex justify-end w-14 -mt-20 mr-2">
             <img src="img/raio.png" alt="" class="w-14">
         </div>
        
@@ -326,21 +380,21 @@
             <!-- Meu logo -->
             <a href="#inicio">
                 <div
-                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-preto rounded-full">
-                    <span class="font-liu text-2xl">Fz</span>
+                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2  border-x-orange-700 border-yellow-500 rounded-full">
+                    <span class="font-liu text-2xl text-black">Fz</span>
                 </div>
             </a>
 
             <!-- Icones das redes sociais -->
             <div class="mx-6 flex justify-center gap-6">
-                <a href=""><i class="hover:fill-orange-900 fa-brands fa-whatsapp text-2xl"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in text-2xl"></i></a>
-                <a href=""><i class="fa-brands fa-github text-2xl"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/"><i class="fa-brands fa-linkedin-in text-2xl text-black"></i></a>
+                <a href="https://github.com/Fezinh0"><i class="fa-brands fa-github text-2xl text-black"></i></a>
             </div>
 
             <!-- Assinatura -->
             <div class="flex justify-center items-center">
-                <span class="text-center"> © Fernando Oliveira | Todos os direitos reservados</span>
+                <span class="text-center text-black"> © 2023 Fernando Oliveira Todos os direitos reservados</span>
             </div>
 
         </div>

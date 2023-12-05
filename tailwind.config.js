@@ -17,7 +17,10 @@ module.exports = {
       backgroundImage : theme => ({
         "raio" : "url('/src/img/raio.png')",
         "delivery" : "url('/src/img/projetos/delivery.png')"
-      })
+      }),
+      boxShadow : {
+        "bx1": "5px 9px 4px"
+      }
 
     },
   },
