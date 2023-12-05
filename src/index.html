@@ -26,11 +26,11 @@
 <body class=" " id="ddmode">
     <!-- Cabeçalho -->
     <header>
-        <div class="flex justify-between items-center">
+        <div class="w-full flex justify-between items-center">
 
             <!-- Meu logo -->
             <div id="inicio"
-                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-x-orange-700 border-yellow-500 rounded-full">
+                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
                 <span class="font-liu text-2xl">Fz</span>
             </div>
 
@@ -39,7 +39,7 @@
                     <span id="hamburguer"></span>
                 </button>
                 <ul id="menu"
-                    class="cursor-pointer lg:items-center lg:w-auto lg:space-x-20 lg:flex lg:mt-0 lg:visible lg:overflow-y-auto">
+                    class="cursor-pointer font-bold lg:items-center lg:w-auto lg:space-x-20 lg:flex lg:mt-0 lg:visible lg:overflow-y-auto">
                     <a href="#sobreM">
                         <li>Sobre Mim</li>
                     </a>
@@ -55,16 +55,13 @@
                     <li id="mododark" onclick="clique('')">Alterar modo</li>
                 </ul>
             </nav>
-        
-            
-            
     </header>
 
     <!-- Conteudo -->
-    <main">
-        <div class="mt-10 flex flex-wrap justify-center items-center gap-14">
+    <main>
+        <div class="w-full mt-10 flex flex-wrap justify-center items-center gap-14">
 
-            <div class="flex flex-wrap justify-center gap-16 md:gap-32">
+            <div class="w-full flex flex-wrap justify-center gap-16 md:gap-32">
 
                 <!-- Titulo principal -->
                 <div class="mx-6 flex flex-col justify-center items-center">
@@ -74,7 +71,8 @@
 
                 <!-- Imagem raio -->
                 <div class="flex justify-center items-center animate-pulse ">
-                    <img src="img/raio.png" alt="" id="giro" class=" duration-300 w-44 border-2 rounded-md border-amarelo md:w-64" onclick="Click('')">
+                    <img src="img/raio.png" alt="Raio bordado em preto com background amarelo" id="giro"
+                        class=" duration-300 w-44 border-2 rounded-md border-amarelo md:w-64" onclick="Click('')">
                 </div>
             </div>
 
@@ -90,36 +88,40 @@
 
                 <!-- Texto sobre mim -->
                 <div class="mx-14 flex justify-center items-center">
-                    <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e atualmente sou
+                    <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e
+                        atualmente sou
                         desenvolvedor front-end </p>
                 </div>
             </section>
         </div>
 
         <!-------- FORMAÇÃO ACADÊMICA  --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="formacao">FORMAÇÕES ACADÊMICAS</span>
-        
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="formacao">FORMAÇÕES
+            ACADÊMICAS</span>
+
         <section class="mt-8 flex flex-wrap justify-center items-center gap-8">
 
-            <!-- Card 2 Formação -->
+            <!-- Card 1 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
                 <section class="flex-row flex">
-                <div class="m-4">
-                    <img src="img/formacoes/unip.png" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
-                </div>
+                    <div class="m-4">
+                        <img src="img/formacoes/unip.png" alt="Logo Universidade Paulista - UNIP"
+                            class="w-20 rounded-md border-2 border-pretoT">
+                    </div>
 
-                <!-- Informações sobre a formação -->
-                <div class="flex justify-center items-start mt-7">
-                    <!-- Titulo da Formação -->
-                    <span class="font-inter font-bold">Ciência da Computação</span>
-                </div>
-            </section>
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">Ciência da Computação</span>
+                    </div>
+                </section>
 
                 <div class="m-4">
                     <p class="font-inter text-sm font-light">Instituição : Universidade Paulista</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 3.840 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Fev 2021 - Atualmente</p>
                 </div>
             </div>
 
@@ -128,88 +130,91 @@
 
                 <!-- Imagem do card -->
                 <section class="flex-row flex">
-                <div class="m-4">
-                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
-                </div>
+                    <div class="m-4">
+                        <img src="img/formacoes/senacc.jpg" alt="Logo Senac São Paulo"
+                            class="w-20 rounded-md border-2 border-pretoT">
+                    </div>
 
-                <!-- Informações sobre a formação -->
-                <div class="flex justify-center items-start mt-7">
-                    <!-- Titulo da Formação -->
-                    <span class="font-inter font-bold">Desenvolvimento Front-end</span>
-                </div>
-            </section>
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">Desenvolvimento Front-end</span>
+                    </div>
+                </section>
 
                 <div class="m-4">
                     <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
                     <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Mar 2023 - Set 2023</p>
                 </div>
             </div>
 
-            <!-- Card 2 Formação -->
+            <!-- Card 3 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
                 <section class="flex-row flex">
-                <div class="m-4">
-                    <img src="img/formacoes/udemy.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
-                </div>
+                    <div class="m-4">
+                        <img src="img/formacoes/udemy.jpg" alt="Logo da plataforma de estudos online Udemy"
+                            class="w-24 rounded-md border-2 border-pretoT">
+                    </div>
 
-                <!-- Informações sobre a formação -->
-                <div class="flex justify-center items-start mt-7">
-                    <!-- Titulo da Formação -->
-                    <span class="font-inter font-bold">Javascript e Typescript do básico ao avançado</span>
-                </div>
-            </section>
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">Javascript e Typescript do básico ao avançado</span>
+                    </div>
+                </section>
 
                 <div class="m-4">
                     <p class="font-inter text-sm font-light">Plataforma de estudos online : Udemy</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 146 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Dez 2023 - Atualmente</p>
                 </div>
             </div>
-            
-            <!-- Card 2 Formação -->
+
+            <!-- Card 4 Formação -->
             <div class="cards">
 
                 <!-- Imagem do card -->
                 <section class="flex-row flex">
-                <div class="m-4">
-                    <img src="img/formacoes/senacc.jpg" alt="" class="w-24 h-18 rounded-md border-2 border-pretoT">
-                </div>
+                    <div class="m-4">
+                        <img src="img/formacoes/senacc.jpg" alt="Logo Senac São Paulo"
+                            class="w-24 rounded-md border-2 border-pretoT">
+                    </div>
 
-                <!-- Informações sobre a formação -->
-                <div class="flex justify-center items-start mt-7">
-                    <!-- Titulo da Formação -->
-                    <span class="font-inter font-bold">UI Designer de iterfaces e interações</span>
-                </div>
-            </section>
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">UI Designer de iterfaces e interações</span>
+                    </div>
+                </section>
 
                 <div class="m-4">
                     <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
+                    <p class="font-inter text-sm font-light">Carga horaria : 36 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Set 2023 - Dez 2023</p>
                 </div>
             </div>
 
         </section>
 
-        <!-- Raio canto da tela -->
-        <div class="flex justify-end items-end w-14">
-            <img src="img/raio.png" alt="" class="w-14">
-        </div>
-
         <!-------- Projetos --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl">MEUS PROJETOS</span>
-        <section class="mt-8 flex flex-wrap justify-center items-center gap-8" id="projetos">
+        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="projetos">MEUS PROJETOS</span>
+        <section class="mt-8 flex flex-wrap justify-center items-center gap-8">
 
             <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class=" flex justify-center">
-                    <img src="img/projetos/delivery.png" alt="" class="w-full h-40 rounded-sm">
+                <div class="">
+                    <img src="img/projetos/delivery.png"
+                        alt="Imagem do projeto Delivery de uma Pizzaria feita em grupo na Unip"
+                        class="w-96 h-40 rounded-md">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
+                <div class="ml-4 flex flex-col gap-6 mt-4">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
@@ -217,12 +222,12 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,java,jquery" class="w-32" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java,jquery" alt="Icones de Desenvolvimento" class="w-32" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="mr-6">
+                    <figcaption class="mr-6 -mt-3">
                         <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
                             auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
                             pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
@@ -230,19 +235,25 @@
                             edição e inclusão.</p>
                     </figcaption>
                 </div>
+
+                <div class="flex gap-10 p-4">
+                    <a href="https://github.com/Fezinh0/DeliveryPizzaria" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
+                    <a href="" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Indisponivel</button></a>
+                </div>
             </div>
 
             <!-- Card 2 Projeto -->
-            <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class=" flex justify-center">
-                    <img src="img/projetos/jdm.png" alt="" class="w-full h-40 rounded-sm">
+                <div class="">
+                    <img src="img/projetos/jdm.png"
+                        alt="Imagem do meu projeto sobre a cultura JDM que aborda a customização de carros"
+                        class="w-full h-40 rounded-md">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
+                <div class="ml-4 flex flex-col gap-6 mt-4">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
@@ -250,18 +261,19 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,tailwind,js," class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,tailwind,js," alt="Icones de Desenvolvimento" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="mr-6">
-                        <p class="font-inter text-justify text-sm">Aplicação em Java para gerenciamento de Pizzaria,
-                            auto-cadastro e login de clientes, inclusão de pedidos via seleção em cardápio e envio do
-                            pedido realizado. Painel de administração da loja inclui manual de cadastro de clientes,
-                            inclusão de produtos, manual de inclusão de pedidos e gerenciamento destes, com listagem,
-                            edição e inclusão.</p>
+                    <figcaption class="mr-6 -mt-3">
+                        <p class="font-inter text-justify text-sm">Meu projeto sobre a cultura JDM busca explorar as complexidades desta subcultura automotiva japonesa, destacando sua estética única. O projeto captura a essência dos carros JDM, desde modelos esportivos lendários até personalizações detalhadas, narrando a paixão dos entusiastas e sua dedicação à expressão singular de estilo. </p>
                     </figcaption>
+                </div>
+
+                <div class="flex gap-10 p-4">
+                    <a href="https://github.com/Fezinh0/JDM" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
+                    <a href="https://jdm.vercel.app/" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Link</button></a>
                 </div>
             </div>
 
@@ -270,12 +282,13 @@
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class=" flex justify-center">
-                    <img src="img/projetos/mova_se.png" alt="" class="w-full h-40 rounded-sm ">
+                <div class="">
+                    <img src="img/projetos/mova_se.png" alt="Imagem do projeto mova-se feito em sala de aula no Senac"
+                        class="w-full h-40 rounded-md">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
+                <div class="ml-4 flex flex-col gap-6 mt-4">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
@@ -283,27 +296,34 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="mr-6">
-                        <p class="font-inter text-justify text-sm"></p>
+                    <figcaption class="mr-6 -mt-3">
+                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso universo de adrenalina e emoção! Em nosso site de esportes radicais, mergulhe em uma experiência que celebra a coragem e a paixão pelos limites. Viva a intensidade, sinta a liberdade e junte-se a nós nesta jornada eletrizante de pura emoção!</p>
                     </figcaption>
+                </div>
+
+                <div class="flex gap-10 p-4">
+                    <a href="//github.com/Fezinh0/site_radical" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
+                    <a href="#" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Indisponivel</button></a>
                 </div>
             </div>
 
-             <!-- Card 3 Projeto -->
+            <!-- Card 4 Projeto -->
             <div class="cardsProjeto">
 
                 <!-- Imagem do card -->
-                <div class=" flex justify-center">
-                    <img src="img/projetos/instatnteunico.png" alt="" class="w-full h-40 rounded-sm ">
+                <div class="">
+                    <img src="img/projetos/instatnteunico.png"
+                        alt="Imagem do projeto integrador Instante único feito no Senac em grupo"
+                        class=" w-full h-40 rounded-md">
                 </div>
 
                 <!-- Infos -->
-                <div class="mx-4 w-full flex flex-col gap-6 mt-10">
+                <div class="ml-4 flex flex-col gap-6 mt-4">
                     <div class="flex gap-4">
 
                         <!-- Titulo do projeto -->
@@ -311,23 +331,25 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento" class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
-                    <figcaption class="mr-6">
-                        <p class="font-inter text-justify text-sm">.</p>
-                    </figcaption>
+                    <figcaption class="mr-6 -mt-3">
+                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso mundo de paixão e imaginação, onde as fotos ganham vida através dos nossos olhos. Somos apaixonados por capturar momentos especiais e compartilhá-los com aqueles que são apaixonados por fotografias.
+                            Nosso site de fotos é um lugar onde a criatividade encontra a devoção, celebrando acontecimentos do dia a dia.</p>
+                    </figcaption>    
+                </div>
+                
+                <div class="flex gap-10 p-4">
+                    <a href="//github.com/Fezinh0/Instante_Unico" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
+                    <a href="https://instante-unico.vercel.app/" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Link</button></a>
                 </div>
             </div>
 
         </section>
 
-        <!-- Raio canto da tela -->
-        <div class="flex justify-end w-14 -mt-4">
-            <img src="img/raio.png" alt="" class="w-14">
-        </div>
 
         <!-------- CONTATO  --------->
         <section class="my-20 flex justify-center items-center flex-col gap-6" id="contato">
@@ -340,39 +362,35 @@
 
             <!-- Formulario -->
             <div>
-                <form action="" class="flex flex-col gap-6 text-black">
+                <form action="" class="p-6 flex flex-col gap-6 text-black">
 
                     <!-- Nome -->
-                    <input type="text" placeholder="Nome" class="border-b-2 border-preto focus:outline-none w-80">
+                    <input type="text" placeholder="Nome" required="text" class="border-b-2 border-preto focus:outline-none w-80">
 
                     <!-- E-mail -->
-                    <input type="text" placeholder="E-mail" class="border-b-2 border-preto focus:outline-none">
+                    <input type="text" placeholder="E-mail" required="e-mail" class="border-b-2 border-preto focus:outline-none">
 
                     <!-- Assunto -->
-                    <input type="text" placeholder="Assunto" class="focus:bg-none border-b-2 border-preto focus:outline-none">
+                    <input type="text" placeholder="Assunto"
+                        class=" focus:bg-none border-b-2 border-preto focus:outline-none">
 
                     <!-- Mensagem -->
                     <textarea name="Mensagem" id="" cols="5" rows="5" placeholder="Mensagem"
-                        class="border-2 border-preto rounded-md resize-none"></textarea>
+                        class="resize-none focus:outline-none border-b-2 border-preto"></textarea>
 
                     <!-- Botão enviar -->
                     <div class="flex justify-center items-center">
-                        <input type="submit" name="Enviar" id="" class=" bg-amarelo text-black font-bold font-inter w-36 h-10 rounded-lg">
+                        <input type="submit" name="Enviar" id=""
+                            class=" bg-amarelo text-black font-bold font-inter w-32 h-10 rounded-lg hover:bg-red-600 duration-300">
                     </div>
 
                 </form>
 
             </div>
         </section>
-
-        <!-- Raio canto da tela -->
-        <div class="flex justify-end w-14 -mt-20 mr-2">
-            <img src="img/raio.png" alt="" class="w-14">
-        </div>
-       
     </main>
 
-    
+
     <!-------- RODAPÉ --------->
     <footer>
         <div class="flex flex-col bg-amarelo w-full h-full mt-10">
@@ -380,16 +398,17 @@
             <!-- Meu logo -->
             <a href="#inicio">
                 <div
-                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2  border-x-orange-700 border-yellow-500 rounded-full">
+                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
                     <span class="font-liu text-2xl text-black">Fz</span>
                 </div>
             </a>
 
             <!-- Icones das redes sociais -->
             <div class="mx-6 flex justify-center gap-6">
-                <a href=""><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
-                <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/"><i class="fa-brands fa-linkedin-in text-2xl text-black"></i></a>
-                <a href="https://github.com/Fezinh0"><i class="fa-brands fa-github text-2xl text-black"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
+                <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in text-2xl text-black"></i></a>
+                <a href="https://github.com/Fezinh0" target="_blank"><i class="fa-brands fa-github text-2xl text-black"></i></a>
             </div>
 
             <!-- Assinatura -->

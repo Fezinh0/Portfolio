@@ -20,6 +20,12 @@ module.exports = {
       }),
       boxShadow : {
         "bx1": "5px 9px 4px"
+      },
+      maxWidth : {
+        "mxw" : "95%"
+      }, 
+      fontSize : {
+        "sm2" : "11px"
       }
 
     },
