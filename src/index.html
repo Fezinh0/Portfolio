@@ -7,39 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo da página -->
     <title>Fernando Oliveira</title>
+    
     <!-- Descrição da página -->
     <meta name="description" content="Seja Bem vindo ao meu portfolio">
+    
     <!-- Icone barra de navegação -->
     <link rel="shortcut icon" href="img/raio.png" type="image/x-icon">
+    
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Conexão tailwindcss -->
+    
+        <!-- Conexão tailwindcss -->
     <link rel="stylesheet" href="./css/output.css">
+    
     <!-- Js -->
     <script defer src="js/main.js"></script>
 
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>    
 
 </head>
 
 <body class=" " id="ddmode">
     <!-- Cabeçalho -->
     <header>
-        <div class="w-full flex justify-between items-center">
+        <div class="mx-6 flex items-center justify-between">
 
             <!-- Meu logo -->
             <div id="inicio"
-                class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
+                class="p-6 cursor-pointer my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
                 <span class="font-liu text-2xl">Fz</span>
-            </div>
+            </div>     
 
-            <nav id="nav" class="relative">
-                <button id="btn-mobile" class="lg:hidden">
-                    <span id="hamburguer"></span>
-                </button>
-                <ul id="menu"
-                    class="cursor-pointer font-bold lg:items-center lg:w-auto lg:space-x-20 lg:flex lg:mt-0 lg:visible lg:overflow-y-auto">
+            <div class="">
+                <div class="icon-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+            
+        <div class="menu">
+               
+                <div class="icon-close">
+                    <i class="fa-solid fa-xmark text-white"></i>
+                </div>
+                <!-- Menu -->
+                <ul id="" class="font-inter">
                     <a href="#sobreM">
                         <li>Sobre Mim</li>
                     </a>
@@ -52,9 +69,12 @@
                     <a href="#contato">
                         <li>Contato</li>
                     </a>
-                    <li id="mododark" onclick="clique('')">Alterar modo</li>
+                    <a href="#">
+                        <li id="cursor-pointer" onclick="clique('')">Alterar modo</li>
+                    </a>
                 </ul>
-            </nav>
+            </div>
+
     </header>
 
     <!-- Conteudo -->
@@ -90,16 +110,17 @@
                 <div class="mx-14 flex justify-center items-center">
                     <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e
                         atualmente sou
-                        desenvolvedor front-end </p>
+                        desenvolvedor front-end, um pouco abaixo você vai conhecer um pouco mais sobre mim e alguns dos
+                        meus projetos.</p>
                 </div>
             </section>
         </div>
 
         <!-------- FORMAÇÃO ACADÊMICA  --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="formacao">FORMAÇÕES
+        <span class="titulos" id="formacao">FORMAÇÕES
             ACADÊMICAS</span>
 
-        <section class="mt-8 flex flex-wrap justify-center items-center gap-8">
+        <section class="secPaginas">
 
             <!-- Card 1 Formação -->
             <div class="cards">
@@ -119,8 +140,8 @@
                 </section>
 
                 <div class="m-4">
-                    <p class="font-inter text-sm font-light">Instituição : Universidade Paulista</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 3.840 Horas</p>
+                    <p class="infosCardsFM">Instituição : Universidade Paulista</p>
+                    <p class="infosCardsFM">Carga horária : 3.840 Horas</p>
                     <p class="font-inter text-sm2 font-light">Fev 2021 - Atualmente</p>
                 </div>
             </div>
@@ -143,8 +164,8 @@
                 </section>
 
                 <div class="m-4">
-                    <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 264 Horas</p>
+                    <p class="infosCardsFM">Instituição : Senac São Paulo</p>
+                    <p class="infosCardsFM">Carga horária : 264 Horas</p>
                     <p class="font-inter text-sm2 font-light">Mar 2023 - Set 2023</p>
                 </div>
             </div>
@@ -167,8 +188,8 @@
                 </section>
 
                 <div class="m-4">
-                    <p class="font-inter text-sm font-light">Plataforma de estudos online : Udemy</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 146 Horas</p>
+                    <p class="infosCardsFM">Plataforma de estudos online : Udemy</p>
+                    <p class="infosCardsFM">Carga horária : 146 Horas</p>
                     <p class="font-inter text-sm2 font-light">Dez 2023 - Atualmente</p>
                 </div>
             </div>
@@ -186,22 +207,21 @@
                     <!-- Informações sobre a formação -->
                     <div class="flex justify-center items-start mt-7">
                         <!-- Titulo da Formação -->
-                        <span class="font-inter font-bold">UI Designer de iterfaces e interações</span>
+                        <span class="font-inter font-bold">UI Designer de Interfaces e Interações</span>
                     </div>
                 </section>
 
                 <div class="m-4">
-                    <p class="font-inter text-sm font-light">Instituição : Senac São Paulo</p>
-                    <p class="font-inter text-sm font-light">Carga horaria : 36 Horas</p>
+                    <p class="infosCardsFM">Instituição : Senac São Paulo</p>
+                    <p class="infosCardsFM">Carga horária : 36 Horas</p>
                     <p class="font-inter text-sm2 font-light">Set 2023 - Dez 2023</p>
                 </div>
             </div>
-
         </section>
 
         <!-------- Projetos --------->
-        <span class="mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl" id="projetos">MEUS PROJETOS</span>
-        <section class="mt-8 flex flex-wrap justify-center items-center gap-8">
+        <span class="titulos" id="projetos">MEUS PROJETOS</span>
+        <section class="secPaginas">
 
             <!-- Card 1 Projeto -->
             <div class="cardsProjeto">
@@ -222,7 +242,8 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,java,jquery" alt="Icones de Desenvolvimento" class="w-32" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,java,jquery"
+                                alt="Icones de Desenvolvimento" class="w-32" />
                         </span>
                     </div>
 
@@ -237,8 +258,11 @@
                 </div>
 
                 <div class="flex gap-10 p-4">
-                    <a href="https://github.com/Fezinh0/DeliveryPizzaria" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
-                    <a href="" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Indisponivel</button></a>
+                    <a href="https://github.com/Fezinh0/DeliveryPizzaria" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-brands fa-github"></i></button></a>
+                    <a href="#"><button class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-solid fa-ban"></i></button></a>
                 </div>
             </div>
 
@@ -261,19 +285,28 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,tailwind,js," alt="Icones de Desenvolvimento" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,tailwind,js," alt="Icones de Desenvolvimento"
+                                class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6 -mt-3">
-                        <p class="font-inter text-justify text-sm">Meu projeto sobre a cultura JDM busca explorar as complexidades desta subcultura automotiva japonesa, destacando sua estética única. O projeto captura a essência dos carros JDM, desde modelos esportivos lendários até personalizações detalhadas, narrando a paixão dos entusiastas e sua dedicação à expressão singular de estilo. </p>
+                        <p class="font-inter text-justify text-sm">Meu projeto sobre a cultura JDM busca explorar as
+                            complexidades desta subcultura automotiva japonesa, destacando sua estética única. O projeto
+                            captura a essência dos carros JDM, desde modelos esportivos lendários até personalizações
+                            detalhadas, narrando a paixão dos entusiastas e sua dedicação à expressão singular de
+                            estilo. </p>
                     </figcaption>
                 </div>
 
                 <div class="flex gap-10 p-4">
-                    <a href="https://github.com/Fezinh0/JDM" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
-                    <a href="https://jdm.vercel.app/" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Link</button></a>
+                    <a href="https://github.com/Fezinh0/JDM" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-brands fa-github"></i></button></a>
+                    <a href="https://jdm.vercel.app/" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-solid fa-link"></i></button></a>
                 </div>
             </div>
 
@@ -296,19 +329,26 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento"
+                                class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6 -mt-3">
-                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso universo de adrenalina e emoção! Em nosso site de esportes radicais, mergulhe em uma experiência que celebra a coragem e a paixão pelos limites. Viva a intensidade, sinta a liberdade e junte-se a nós nesta jornada eletrizante de pura emoção!</p>
+                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso universo de adrenalina e emoção!
+                            Em nosso site de esportes radicais, mergulhe em uma experiência que celebra a coragem e a
+                            paixão pelos limites. Viva a intensidade, sinta a liberdade e junte-se a nós nesta jornada
+                            eletrizante de pura emoção!</p>
                     </figcaption>
                 </div>
 
                 <div class="flex gap-10 p-4">
-                    <a href="//github.com/Fezinh0/site_radical" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
-                    <a href="#" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Indisponivel</button></a>
+                    <a href="//github.com/Fezinh0/site_radical" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-brands fa-github"></i></button></a>
+                    <a href="#"><button class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-solid fa-ban"></i></button></a>
                 </div>
             </div>
 
@@ -331,20 +371,28 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento" class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento"
+                                class="w-28" />
                         </span>
                     </div>
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6 -mt-3">
-                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso mundo de paixão e imaginação, onde as fotos ganham vida através dos nossos olhos. Somos apaixonados por capturar momentos especiais e compartilhá-los com aqueles que são apaixonados por fotografias.
-                            Nosso site de fotos é um lugar onde a criatividade encontra a devoção, celebrando acontecimentos do dia a dia.</p>
-                    </figcaption>    
+                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso mundo de paixão e imaginação, onde
+                            as fotos ganham vida através dos nossos olhos. Somos apaixonados por capturar momentos
+                            especiais e compartilhá-los com aqueles que são apaixonados por fotografias.
+                            Nosso site de fotos é um lugar onde a criatividade encontra a devoção, celebrando
+                            acontecimentos do dia a dia.</p>
+                    </figcaption>
                 </div>
-                
+
                 <div class="flex gap-10 p-4">
-                    <a href="//github.com/Fezinh0/Instante_Unico" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Repositório</button></a>
-                    <a href="https://instante-unico.vercel.app/" target="_blank"><button class="font-inter font-bold bg-amarelo w-28 rounded-sm text-black">Link</button></a>
+                    <a href="//github.com/Fezinh0/Instante_Unico" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-brands fa-github"></i></button></a>
+                    <a href="https://instante-unico.vercel.app/" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-solid fa-link"></i></button></a>
                 </div>
             </div>
 
@@ -362,16 +410,19 @@
 
             <!-- Formulario -->
             <div>
-                <form action="" class="p-6 flex flex-col gap-6 text-black">
+                <form target="_blank" action="https://formsubmit.co/fs479936@gmail.com" method="POST"
+                    class="p-6 flex flex-col gap-6 text-black">
 
                     <!-- Nome -->
-                    <input type="text" placeholder="Nome" required="text" class="border-b-2 border-preto focus:outline-none w-80">
+                    <input type="text" name="Nome" placeholder="Nome" required="text"
+                        class="border-b-2 border-preto focus:outline-none w-80">
 
                     <!-- E-mail -->
-                    <input type="text" placeholder="E-mail" required="e-mail" class="border-b-2 border-preto focus:outline-none">
+                    <input type="text" name="E-mail" placeholder="E-mail" required="e-mail"
+                        class="border-b-2 border-preto focus:outline-none">
 
                     <!-- Assunto -->
-                    <input type="text" placeholder="Assunto"
+                    <input type="text" name="Assunto" placeholder="Assunto"
                         class=" focus:bg-none border-b-2 border-preto focus:outline-none">
 
                     <!-- Mensagem -->
@@ -405,10 +456,12 @@
 
             <!-- Icones das redes sociais -->
             <div class="mx-6 flex justify-center gap-6">
-                <a href="" target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5511977478915&text=Ol%C3%A1,%20estou%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio"
+                    target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
                 <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/" target="_blank"><i
                         class="fa-brands fa-linkedin-in text-2xl text-black"></i></a>
-                <a href="https://github.com/Fezinh0" target="_blank"><i class="fa-brands fa-github text-2xl text-black"></i></a>
+                <a href="https://github.com/Fezinh0" target="_blank"><i
+                        class="fa-brands fa-github text-2xl text-black"></i></a>
             </div>
 
             <!-- Assinatura -->
@@ -418,6 +471,8 @@
 
         </div>
     </footer>
+
+    
 </body>
 
 </html>

@@ -3,17 +3,35 @@
 @tailwind utilities;
 
     @layer components {
+       
+        /* Cards formação academica */
         .cards {
             @apply max-w-sm border-2 border-gray-400 rounded-md flex flex-col w-[350px] h-52 shadow-bx1 shadow-slate-300;
         }
 
+        /* Informações dos cards de formação academica */
+        .infosCardsFM {
+            @apply font-inter text-sm font-light
+        }
+
+        /* Cards dos projetos */
         .cardsProjeto {
             @apply max-w-sm z-10 border-2 border-gray-400 shadow-bx1 shadow-slate-300 font-light rounded-md w-[330px] h-[450px] flex flex-col items-center;
         }
 
+        /* Titulos das sessões */
+        .titulos {
+            @apply mt-20 flex justify-center items-center text-2xl font-julius md:text-4xl;
+        }
+
+        /* Sessões */
+        .secPaginas {
+            @apply mt-8 flex flex-wrap justify-center items-center gap-8
+        }
+
+        /* Função dark da página */
         .darkmode {
             @apply bg-pretoT text-white border-white;
         }
-
 
     }
