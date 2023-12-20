@@ -7,75 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo da página -->
     <title>Fernando Oliveira</title>
-    
+
     <!-- Descrição da página -->
     <meta name="description" content="Seja Bem vindo ao meu portfolio">
-    
+
     <!-- Icone barra de navegação -->
     <link rel="shortcut icon" href="img/raio.png" type="image/x-icon">
-    
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <!-- Conexão tailwindcss -->
+
+    <!-- Conexão tailwindcss -->
     <link rel="stylesheet" href="./css/output.css">
-    
+
     <!-- Js -->
     <script defer src="js/main.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </head>
 
 <body class=" " id="ddmode">
     <!-- Cabeçalho -->
     <header>
-        <div class="mx-6 flex items-center justify-between">
+        <div class="m-7 md:-mt-4 md:mx-14 flex items-center justify-between">
 
             <!-- Meu logo -->
             <div id="inicio"
-                class="p-6 cursor-pointer my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
-                <span class="font-liu text-2xl">Fz</span>
-            </div>     
+                class="animate-bounce md:hidden p-6 cursor-pointer my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
+                <span class="font-liu text-2xl ">Fz</span>
+            </div>
 
-            <div class="">
+            <div class="hidden md:block font-julius text-4xl m-20">Fernando Oliveira</div>
+
+            <ul id="ApMenu" class="hidden md:flex text-xl font-bold">
+                <a href="#sobreM">
+                    <li>Sobre Mim</li>
+                </a>
+                <a href="#formacao">
+                    <li>Formações</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a href="#">
+                    <li id="cursor-pointer" onclick="clique('')">Alterar modo <i class="fa-solid fa-moon"></i></li>
+                </a>
+            </ul>
+
+            <div class="mt-7" id="MnM">
                 <div class="icon-menu">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>Menu
                 </div>
             </div>
         </div>
-            
+
         <div class="menu">
-               
-                <div class="icon-close">
-                    <i class="fa-solid fa-xmark text-white"></i>
-                </div>
-                <!-- Menu -->
-                <ul id="" class="font-inter">
-                    <a href="#sobreM">
-                        <li>Sobre Mim</li>
-                    </a>
-                    <a href="#formacao">
-                        <li>Formações</li>
-                    </a>
-                    <a href="#projetos">
-                        <li>Projetos</li>
-                    </a>
-                    <a href="#contato">
-                        <li>Contato</li>
-                    </a>
-                    <a href="#">
-                        <li id="cursor-pointer" onclick="clique('')">Alterar modo</li>
-                    </a>
-                </ul>
+
+            <div class="icon-close">
+                <i class="fa-solid fa-xmark text-white text-2xl"></i>
             </div>
+            <!-- Menu -->
+            <ul id="ApMenu" class="font-inter">
+                <a href="#sobreM">
+                    <li>Sobre Mim</li>
+                </a>
+                <a href="#formacao">
+                    <li>Formações</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a href="#">
+                    <li id="cursor-pointer" onclick="clique('')">Alterar modo <i class="fa-solid fa-moon"></i></li>
+                </a>
+            </ul>
+
+        </div>
 
     </header>
+
+    
 
     <!-- Conteudo -->
     <main>
@@ -110,7 +133,7 @@
                 <div class="mx-14 flex justify-center items-center">
                     <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e
                         atualmente sou
-                        desenvolvedor front-end, um pouco abaixo você vai conhecer um pouco mais sobre mim e alguns dos
+                        desenvolvedor front-end, um pouco abaixo você vai conhecer mais sobre mim e alguns dos
                         meus projetos.</p>
                 </div>
             </section>
@@ -118,7 +141,7 @@
 
         <!-------- FORMAÇÃO ACADÊMICA  --------->
         <span class="titulos" id="formacao">FORMAÇÕES
-            ACADÊMICAS</span>
+        </span>
 
         <section class="secPaginas">
 
@@ -296,7 +319,7 @@
                             complexidades desta subcultura automotiva japonesa, destacando sua estética única. O projeto
                             captura a essência dos carros JDM, desde modelos esportivos lendários até personalizações
                             detalhadas, narrando a paixão dos entusiastas e sua dedicação à expressão singular de
-                            estilo. </p>
+                            estilo.</p>
                     </figcaption>
                 </div>
 
@@ -329,8 +352,8 @@
 
                         <!-- Icons dev -->
                         <span class="mr-6">
-                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery" alt="Icones de Desenvolvimento"
-                                class="w-28" />
+                            <img src="https://skillicons.dev/icons?i=html,css,js,jquery,php"
+                                alt="Icones de Desenvolvimento" class="w-28" />
                         </span>
                     </div>
 
@@ -347,8 +370,9 @@
                     <a href="//github.com/Fezinh0/site_radical" target="_blank"><button
                             class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
                                 class="fa-brands fa-github"></i></button></a>
-                    <a href="#"><button class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
-                                class="fa-solid fa-ban"></i></button></a>
+                    <a href="https://siteradical.vercel.app/" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                                class="fa-solid fa-link"></i></button></a>
                 </div>
             </div>
 
@@ -406,7 +430,7 @@
             <span class="text-2xl font-julius md:text-4xl">ENTRE EM CONTATO</span>
 
             <!-- Mini texto -->
-            <p class="text-justify font-inter">Fique à vontade para entra em contato comigo!</p>
+            <p class="text-justify font-inter">Fique à vontade para entrar em contato comigo!</p>
 
             <!-- Formulario -->
             <div>
@@ -455,18 +479,19 @@
             </a>
 
             <!-- Icones das redes sociais -->
-            <div class="mx-6 flex justify-center gap-6">
+            <div class="mb-9 flex justify-center gap-6">
                 <a href="https://api.whatsapp.com/send?phone=5511977478915&text=Ol%C3%A1,%20estou%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio"
-                    target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black"></i></a>
+                    target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black md:text-3xl"></i></a>
                 <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in text-2xl text-black"></i></a>
+                        class="fa-brands fa-linkedin-in text-2xl text-black md:text-3xl"></i></a>
                 <a href="https://github.com/Fezinh0" target="_blank"><i
-                        class="fa-brands fa-github text-2xl text-black"></i></a>
+                        class="fa-brands fa-github text-2xl text-black md:text-3xl"></i></a>
             </div>
 
             <!-- Assinatura -->
             <div class="flex justify-center items-center">
-                <span class="text-center text-black"> © 2023 Fernando Oliveira Todos os direitos reservados</span>
+                <span class=" text-center text-black font-semibold md:text-2xl">Copyright © 2023 Fernando Oliveira Todos os direitos
+                    reservados</span>
             </div>
 
         </div>

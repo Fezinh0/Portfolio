@@ -1,8 +1,5 @@
-
-/* O menu */
-/* O menu começara escondido */
 .menu {
-    background: #000000 repeat left top;
+    background: #181818 repeat left top;
     left: -350px;
     height: 100%;
     top: 0;
@@ -24,6 +21,11 @@
     padding-top: 3px;
 }
 
+.menu li:hover {
+    transform: scalex(2, 1.0);
+    color: #fff;
+}
+
 .menu a {
     color: #fff;
     font-size: 18px;
@@ -41,6 +43,7 @@
 .icon-close h1 {
     cursor: pointer;
     padding-left: 10px;
+    width: 15px;
     color: #fff;
     font-weight: 600;
 }
@@ -62,8 +65,27 @@
     max-width: 79px;
 }
 
-@media (max-width: 699px) {
+
+@media (min-width: 699px) {
     .menu {
-        display: block;
+        visibility: hidden;
+        display: none;
     }
+
+    #MnM {
+        display: none;
+        visibility: hidden;
+    }
+
+    #ApMenu {
+        display: flex;
+        gap: 2rem;
+        visibility: visible;
+    }
+
+    #ApMenu li:hover {
+        text-decoration: underline; 
+        transition: text-decoration 3.5s;
+    }
+
 }
