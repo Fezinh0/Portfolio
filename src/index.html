@@ -25,21 +25,23 @@
     <!-- Js -->
     <script defer src="js/main.js"></script>
 
+    <!-- Conexão com css -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Conexão Jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </head>
 
-<body class=" " id="ddmode">
+<body id="ddmode">
     <!-- Cabeçalho -->
     <header>
         <div class="m-7 md:-mt-4 md:mx-14 flex items-center justify-between">
 
             <!-- Meu logo -->
             <div id="inicio"
-                class="animate-bounce md:hidden p-6 cursor-pointer my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
+                class="md:hidden p-6 cursor-pointer my-10 flex justify-center items-center w-10 h-10 border-2 border-amarelo rounded-full">
                 <span class="font-liu text-2xl ">Fz</span>
             </div>
 
@@ -65,7 +67,7 @@
 
             <div class="mt-7" id="MnM">
                 <div class="icon-menu">
-                    <i class="fa fa-bars"></i>Menu
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
         </div>
@@ -98,22 +100,21 @@
 
     </header>
 
-    
 
     <!-- Conteudo -->
     <main>
         <div class="w-full mt-10 flex flex-wrap justify-center items-center gap-14">
 
-            <div class="w-full flex flex-wrap justify-center gap-16 md:gap-32">
+            <div class="w-full flex flex-col md:flex-row justify-center gap-16 md:gap-32">
 
                 <!-- Titulo principal -->
-                <div class="mx-6 flex flex-col justify-center items-center">
+                <div id="SB" class="mx-6 flex flex-col justify-center items-center">
                     <span class="mr-16 text-5xl font-julius md:text-7xl">FRONT-END</span>
                     <span class="ml-20 text-5xl font-julius md:text-7xl">DEVELOPER</span>
                 </div>
 
                 <!-- Imagem raio -->
-                <div class="flex justify-center items-center animate-pulse ">
+                <div id="raio" class="flex justify-center items-center animate-pulse ">
                     <img src="img/raio.png" alt="Raio bordado em preto com background amarelo" id="giro"
                         class=" duration-300 w-44 border-2 rounded-md border-amarelo md:w-64" onclick="Click('')">
                 </div>
@@ -130,10 +131,10 @@
                 </div>
 
                 <!-- Texto sobre mim -->
-                <div class="mx-14 flex justify-center items-center">
-                    <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo e
+                <div class="mx-14 flex justify-center items-center md:mx-56">
+                    <p class="text-justify md:text-xl">Sou Fernando tenho 20 anos, moro na zona norte de São Paulo, sou apaixonado por tecnologia, curto games e praticar esportes ao ar livre como basquete por exemplo,
                         atualmente sou
-                        desenvolvedor front-end, um pouco abaixo você vai conhecer mais sobre mim e alguns dos
+                        desenvolvedor front-end, e pouco abaixo você vai conhecer mais sobre mim e alguns dos
                         meus projetos.</p>
                 </div>
             </section>
@@ -152,7 +153,7 @@
                 <section class="flex-row flex">
                     <div class="m-4">
                         <img src="img/formacoes/unip.png" alt="Logo Universidade Paulista - UNIP"
-                            class="w-20 rounded-md border-2 border-pretoT">
+                            class="w-16 rounded-md border-2 border-pretoT">
                     </div>
 
                     <!-- Informações sobre a formação -->
@@ -200,11 +201,11 @@
                 <section class="flex-row flex">
                     <div class="m-4">
                         <img src="img/formacoes/udemy.jpg" alt="Logo da plataforma de estudos online Udemy"
-                            class="w-24 rounded-md border-2 border-pretoT">
+                            class="w-20 rounded-md border-2 border-pretoT">
                     </div>
 
                     <!-- Informações sobre a formação -->
-                    <div class="flex justify-center items-start mt-7">
+                    <div class="flex justify-center items-start mt-7 mx-2">
                         <!-- Titulo da Formação -->
                         <span class="font-inter font-bold">Javascript e Typescript do básico ao avançado</span>
                     </div>
@@ -224,7 +225,7 @@
                 <section class="flex-row flex">
                     <div class="m-4">
                         <img src="img/formacoes/senacc.jpg" alt="Logo Senac São Paulo"
-                            class="w-24 rounded-md border-2 border-pretoT">
+                            class="w-20 rounded-md border-2 border-pretoT">
                     </div>
 
                     <!-- Informações sobre a formação -->
@@ -238,6 +239,54 @@
                     <p class="infosCardsFM">Instituição : Senac São Paulo</p>
                     <p class="infosCardsFM">Carga horária : 36 Horas</p>
                     <p class="font-inter text-sm2 font-light">Set 2023 - Dez 2023</p>
+                </div>
+            </div>
+
+            <!-- Card 5 Formação -->
+            <div class="cards hidden md:flex">
+
+                <!-- Imagem do card -->
+                <section class="flex-row flex">
+                    <div class="m-4">
+                        <img src="img/formacoes/udemy.jpg" alt="Logo da plataforma de estudos online Udemy"
+                            class="w-14 rounded-md border-2 border-pretoT">
+                    </div>
+
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">Tailwind do básico ao avançado</span>
+                    </div>
+                </section>
+
+                <div class="m-4">
+                    <p class="infosCardsFM">Plataforma de estudos online : Udemy</p>
+                    <p class="infosCardsFM">Carga horária : 11 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Nov 2023 - Nov 2023</p>
+                </div>
+            </div>
+
+            <!-- Card 6 Formação -->
+            <div class="cards hidden md:flex">
+
+                <!-- Imagem do card -->
+                <section class="flex-row flex">
+                    <div class="m-4">
+                        <img src="img/formacoes/alura.jpeg" alt="Logo da plataforma de estudos online Alura"
+                            class="w-14 rounded-md border-2 border-pretoT">
+                    </div>
+
+                    <!-- Informações sobre a formação -->
+                    <div class="flex justify-center items-start mt-7">
+                        <!-- Titulo da Formação -->
+                        <span class="font-inter font-bold">Praticando React com js</span>
+                    </div>
+                </section>
+
+                <div class="m-4">
+                    <p class="infosCardsFM">Plataforma de estudos online : Alura</p>
+                    <p class="infosCardsFM">Carga horária : 8 Horas</p>
+                    <p class="font-inter text-sm2 font-light">Out 2023 - Out 2023</p>
                 </div>
             </div>
         </section>
@@ -282,9 +331,9 @@
 
                 <div class="flex gap-10 p-4">
                     <a href="https://github.com/Fezinh0/DeliveryPizzaria" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-brands fa-github"></i></button></a>
-                    <a href="#"><button class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                    <a href="#"><button class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-solid fa-ban"></i></button></a>
                 </div>
             </div>
@@ -315,20 +364,20 @@
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6 -mt-3">
-                        <p class="font-inter text-justify text-sm">Meu projeto sobre a cultura JDM busca explorar as
-                            complexidades desta subcultura automotiva japonesa, destacando sua estética única. O projeto
-                            captura a essência dos carros JDM, desde modelos esportivos lendários até personalizações
-                            detalhadas, narrando a paixão dos entusiastas e sua dedicação à expressão singular de
-                            estilo.</p>
+                        <p class="font-inter text-justify text-sm">Minha imersão na cultura JDM desvenda as intrincadas
+                            camadas dessa subcultura automotiva japonesa, evidenciando sua estética singular. O projeto
+                            eterniza a essência dos carros JDM, desde os lendários modelos esportivos até as minuciosas
+                            customizações, contando a ardente paixão dos entusiastas e sua incansável dedicação à
+                            expressão única de estilo. </p>
                     </figcaption>
                 </div>
 
                 <div class="flex gap-10 p-4">
                     <a href="https://github.com/Fezinh0/JDM" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-brands fa-github"></i></button></a>
                     <a href="https://jdm.vercel.app/" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-solid fa-link"></i></button></a>
                 </div>
             </div>
@@ -359,19 +408,20 @@
 
                     <!-- Explicação do projeto -->
                     <figcaption class="mr-6 -mt-3">
-                        <p class="font-inter text-justify text-sm">Bem-vindo ao nosso universo de adrenalina e emoção!
-                            Em nosso site de esportes radicais, mergulhe em uma experiência que celebra a coragem e a
-                            paixão pelos limites. Viva a intensidade, sinta a liberdade e junte-se a nós nesta jornada
-                            eletrizante de pura emoção!</p>
+                        <p class="font-inter text-justify text-sm">Explore nosso emocionante universo repleto de
+                            adrenalina e paixão! Em nosso catálogo online de esportes radicais, entregue-se a uma
+                            experiência que celebra a coragem e ultrapassa os limites. Viva a intensidade, sinta a
+                            liberdade e embarque conosco nesta eletrizante jornada de pura emoção! Descubra novos
+                            horizontes, desafie-se e faça parte desse emocionante universo radical.</p>
                     </figcaption>
                 </div>
 
                 <div class="flex gap-10 p-4">
                     <a href="//github.com/Fezinh0/site_radical" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-brands fa-github"></i></button></a>
                     <a href="https://siteradical.vercel.app/" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-solid fa-link"></i></button></a>
                 </div>
             </div>
@@ -412,12 +462,93 @@
 
                 <div class="flex gap-10 p-4">
                     <a href="//github.com/Fezinh0/Instante_Unico" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-brands fa-github"></i></button></a>
                     <a href="https://instante-unico.vercel.app/" target="_blank"><button
-                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-black"><i
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
                                 class="fa-solid fa-link"></i></button></a>
                 </div>
+            </div>
+
+            <!-- Card 4 Projeto -->
+            <div class="cardsProjeto hidden md:flex">
+
+                <!-- Imagem do card -->
+                <div class="">
+                    <img src="img/projetos/amazon.png" alt="Imagem do projeto Clone do Site Amazon"
+                        class=" w-full h-40 rounded-md">
+                </div>
+
+                <!-- Infos -->
+                <div class="ml-4 flex flex-col gap-6 mt-4">
+                    <div class="flex gap-4">
+
+                        <!-- Titulo do projeto -->
+                        <span class="font-inter font-bold">Clone Amazon</span>
+
+                        <!-- Icons dev -->
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css,js,tailwind"
+                                alt="Icones de Desenvolvimento" class="w-28" />
+                        </span>
+                    </div>
+
+                    <!-- Explicação do projeto -->
+                    <figcaption class="mr-6 -mt-3">
+                        <p class="font-inter text-justify text-sm">O projeto educacional visa criar um website clone da Amazon para proporcionar uma experiência prática. O foco está no aprimoramento de habilidades, especialmente usando o framework Tailwind CSS, abrangendo design, programação e desenvolvimento web. O objetivo é oferecer uma imersão completa.</p>
+                    </figcaption>
+                </div>
+
+                <div class="flex justify-end items-end gap-10 p-4 mt-4">
+                    <a href="https://github.com/Fezinh0/Clone-Amazon" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
+                                class="fa-brands fa-github"></i></button></a>
+                    <a href="https://clone-amazon-cyan.vercel.app/" target="_blank"><button
+                            class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
+                                class="fa-solid fa-link"></i></button></a>
+                </div>
+            </div>
+
+            <!-- Card 4 Projeto -->
+            <div class="cardsProjeto hidden md:flex">
+
+                <!-- Imagem do card -->
+                <div class="">
+                    <img src="img/projetos/lojaitenss.png" alt="Imagem do projeto loja de itens do jogo Fortnite"
+                        class=" w-full h-40 rounded-t-md">
+                </div>
+
+                <!-- Infos -->
+                <div class="ml-4 flex flex-col gap-6 mt-4">
+                    <div class="flex gap-4">
+
+                        <!-- Titulo do projeto -->
+                        <span class="font-inter font-bold">Loja de Itens</span>
+
+                        <!-- Icons dev -->
+                        <span class="mr-6">
+                            <img src="https://skillicons.dev/icons?i=html,css," alt="Icones de Desenvolvimento"
+                                class="w-20" />
+                        </span>
+                    </div>
+
+                    <!-- Explicação do projeto -->
+                    <figcaption class="mr-6 -mt-3">
+                        <p class="font-inter text-justify text-sm">O projeto de criar um website mobile clone da loja de itens do jogo Fortnite é muito empolgante e visa replicar a experiência de personalização e aquisição de itens característica do universo do jogo. O foco do site é oferecer aos usuários uma plataforma alternativa para explorar e adquirir skins, emotes, picaretas.</p>
+                    </figcaption>
+
+
+                    <div class="flex gap-10 p-3">
+                        <a href="https://github.com/Fezinh0/Loja-de-Itens" target="_blank"><button
+                                class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
+                                    class="fa-brands fa-github"></i></button></a>
+                        <a href="https://loja-de-itens.vercel.app/" target="_blank"><button
+                                class="font-inter font-bold bg-amarelo w-28 rounded-full text-preto"><i
+                                    class="fa-solid fa-link"></i></button></a>
+                    </div>
+                </div>
+
+
             </div>
 
         </section>
@@ -435,7 +566,7 @@
             <!-- Formulario -->
             <div>
                 <form target="_blank" action="https://formsubmit.co/fs479936@gmail.com" method="POST"
-                    class="p-6 flex flex-col gap-6 text-black">
+                    class="p-6 flex flex-col gap-6 text-preto">
 
                     <!-- Nome -->
                     <input type="text" name="Nome" placeholder="Nome" required="text"
@@ -456,7 +587,7 @@
                     <!-- Botão enviar -->
                     <div class="flex justify-center items-center">
                         <input type="submit" name="Enviar" id=""
-                            class=" bg-amarelo text-black font-bold font-inter w-32 h-10 rounded-lg hover:bg-red-600 duration-300">
+                            class=" bg-amarelo text-preto font-bold font-inter w-32 h-10 rounded-lg hover:bg-red-600 duration-300">
                     </div>
 
                 </form>
@@ -472,32 +603,31 @@
 
             <!-- Meu logo -->
             <a href="#inicio">
-                <div
-                    class="p-6 cursor-pointer mx-6 my-10 flex justify-center items-center w-10 h-10 border-2 border-yellow-800 rounded-full">
-                    <span class="font-liu text-2xl text-black">Fz</span>
+                <div class="flex justify-center m-14">
+                    <span class="text-xl font-bold text-preto">Fernando de Oliveira</span>
                 </div>
+
             </a>
 
             <!-- Icones das redes sociais -->
-            <div class="mb-9 flex justify-center gap-6">
+            <addres class="mb-9 flex justify-center gap-6">
                 <a href="https://api.whatsapp.com/send?phone=5511977478915&text=Ol%C3%A1,%20estou%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio"
-                    target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-black md:text-3xl"></i></a>
+                    target="_blank"><i class="fa-brands fa-whatsapp text-2xl text-preto"></i></a>
                 <a href="https://www.linkedin.com/in/fernando-a-santos-de-oliveira-0001a0236/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in text-2xl text-black md:text-3xl"></i></a>
+                        class="fa-brands fa-linkedin-in text-2xl text-preto"></i></a>
                 <a href="https://github.com/Fezinh0" target="_blank"><i
-                        class="fa-brands fa-github text-2xl text-black md:text-3xl"></i></a>
-            </div>
+                        class="fa-brands fa-github text-2xl text-preto"></i></a>
+            </addres>
 
             <!-- Assinatura -->
             <div class="flex justify-center items-center">
-                <span class=" text-center text-black font-semibold md:text-2xl">Copyright © 2023 Fernando Oliveira Todos os direitos
-                    reservados</span>
+                <span class=" text-center text-preto font-semibold mx-6">Copyright © 2023 Fernando de Oliveira | Todos
+                    os direitos
+                    reservados.</span>
             </div>
 
         </div>
     </footer>
-
-    
 </body>
 
 </html>

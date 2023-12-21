@@ -4,20 +4,14 @@ function clique() {
     dark.classList.toggle("darkmode");
 }
 
-// girar raio
-var giro = document.getElementById('giro');
-function Click() {
-    giro.style.transform = "rotateX(10deg) rotateY(720deg)"
-}
-
 // menu lateral
 function moverMenu(distMenu, distBody) {
     $('.menu').animate({
-        left: distMenu + "px"
+        right: distMenu + "px"
     }, 450);
 
     $('body').animate({
-        left: distBody + "px"
+        right: distBody + "px"
     }, 200);
 }
 

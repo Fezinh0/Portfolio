@@ -27,6 +27,9 @@ module.exports = {
       }, 
       fontSize : {
         "sm2" : "11px"
+      },
+      screens : {
+        "md": "699px"
       }
 
     },
