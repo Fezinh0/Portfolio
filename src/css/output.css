@@ -646,6 +646,11 @@ video {
   margin-right: 3.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -659,11 +664,6 @@ video {
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .-mt-3 {
@@ -760,6 +760,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 @keyframes pulse {
